@@ -24,6 +24,9 @@
     },
     "extra": {
         "think": {
+            "services": [
+                "think\\service\\AddonsService"
+            ],
             "config":{
                 "addons": "src/config.php"
             }            
