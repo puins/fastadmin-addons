@@ -10,7 +10,7 @@ use think\facade\Event;
 use think\facade\Route;
 
 // 插件目录
-define('ADDON_PATH', root_path() . 'addons' . DIRECTORY_SEPARATOR);
+//define('ADDON_PATH', root_path() . 'addons' . DIRECTORY_SEPARATOR);
 
 // 定义路由
 Route::any('addons/:addon/[:controller]/[:action]', "\\think\\addons\\Route@execute");
