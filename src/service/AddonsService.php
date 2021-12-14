@@ -41,7 +41,7 @@ class AddonsService extends Service
         }
 
         // 监听addon_init
-        Event::listen('addon_init');
+        Event::listen('addon_init',request());
 
         // 闭包自动识别插件目录配置
         Event::trigger('AppInit', function () {
