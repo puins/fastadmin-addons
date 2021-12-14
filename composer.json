@@ -1,32 +1,29 @@
 {
     "name": "puins/fastadmin-addons",
-    "description": "thinkphp6 fastadmin版本插件包",
+    "description": "addons package for fastadmin",
+    "license": "Apache-2.0",
     "authors": [
         {
             "name": "puins",
             "email": "hnjumeng@163.com"
         }
     ],
-    "license": "Apache-2.0",
     "require": {
         "php": ">=7.1.0",
         "topthink/framework": "^6.0.0",
-        "topthink/think-view": "^1.0",
-        "topthink/think-helper": "^3.0.0"
+        "nelexa/zip": "^3.3",
+        "symfony/var-exporter": "^4.4.13"
     },
     "autoload": {
         "psr-4": {
             "think\\": "src/"
         },
         "files": [
-            "src/helper.php"
+            "src/common.php"
         ]
     },
     "extra": {
         "think": {
-            "services": [
-                "think\\service\\AddonsService"
-            ],
             "config":{
                 "addons": "src/config.php"
             }            
