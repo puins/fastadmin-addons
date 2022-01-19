@@ -94,8 +94,7 @@ class Addons
         }
 
         if (!$this->app->http->isBind()) {
-            $path = $this->app->request->url();
-            $path = ltrim($path, '/');
+            $path = $this->app->request->pathinfo();
             $name = current(explode('/', $path));
 
             if (strpos($name, '.')) {
